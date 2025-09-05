@@ -1,0 +1,9 @@
+@defer (when isImageVisible) {
+  <img
+  src="https://www.protocoloimep.com/app/uploads/2020/11/closeup-shot-of-realistic-waving-flag-of-spain-1024x500.jpg"
+  alt="Differed Image">
+}
+@if (!isImageVisible) {
+  <button (click)="showImage()">See Image</button>
+}
+

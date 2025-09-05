@@ -1,0 +1,10 @@
+@defer (when isContentReady) {
+<img
+  src="https://www.protocoloimep.com/app/uploads/2020/11/closeup-shot-of-realistic-waving-flag-of-spain-1024x500.jpg"
+  alt="Differed Image"
+/>
+} @loading (after 2000ms; minimum 2s) {
+<p>Cargando...</p>
+} @placeholder {
+<div>Setting up the content</div>
+}
